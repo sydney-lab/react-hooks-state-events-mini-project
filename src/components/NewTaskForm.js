@@ -15,22 +15,27 @@ function NewTaskForm({ categories, onTaskFormSubmit }) {
 
   return (
     <form className="new-task-form" onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="New task details"
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-      />
-      <select
-        value={category}
-        onChange={(e) => setCategory(e.target.value)}
-      >
-        {categories
-          .filter(cat => cat !== "All")
-          .map(cat => (
-            <option key={cat} value={cat}>{cat}</option>
-          ))}
-      </select>
+      <label>
+        Details
+        <input
+          type="text"
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+        />
+      </label>
+      <label>
+        Category
+        <select
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
+        >
+          {categories
+            .filter(cat => cat !== "All")
+            .map(cat => (
+              <option key={cat} value={cat}>{cat}</option>
+            ))}
+        </select>
+      </label>
       <input type="submit" value="Add task" />
     </form>
   );

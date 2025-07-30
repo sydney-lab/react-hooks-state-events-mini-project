@@ -3,7 +3,7 @@ const CATEGORIES = ["All", "Code", "Food", "Money", "Misc"];
 
 const TASKS = [
   { text: "Buy rice", category: "Food" },
-  { text: "Save a file", category: "Code" },
+  { text: "Build a todo app", category: "Code" },
   { text: "Pay rent", category: "Money" },
   { text: "Bake cake", category: "Food" },
   { text: "Call mom", category: "Misc" }

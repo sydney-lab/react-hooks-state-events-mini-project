@@ -4,7 +4,7 @@ import TaskList from "./TaskList";
 import CategoryFilter from "./CategoryFilter";
 import NewTaskForm from "./NewTaskForm";
 
-import { TASKS, CATEGORIES } from "./data";
+import { TASKS, CATEGORIES } from "../data";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("All");
